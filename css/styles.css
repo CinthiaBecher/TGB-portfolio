@@ -12,7 +12,7 @@ body {
 }
 
 /* Header e Navegação */
-header {
+.header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
@@ -21,7 +21,7 @@ header {
     z-index: 1000;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,9 +58,10 @@ nav {
     cursor: pointer;
 }
 
-.hero {
+/* Introducao do portfolio */
+.intro {
     height: 50vh;
-    background: url('assets/hero-bg.png') center center/cover no-repeat;
+    background-image: url(/img/intro-bg.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,46 +70,16 @@ nav {
 
 }
 
-.hero h1, .hero p {
+.intro h1, .intro p {
     color: #000000;
     text-align: center;
 }
-.hero h1 {
+.intro h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
-.hero p {
+.intro p {
     font-size: 1.5rem;
-}
-
-.profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    object-fit: cover;
-    border: 5px solid #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.social-links {
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: #2c3e50;
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #3498db;
-}
-
-/* Seções */
-section {
-    padding: 5rem 2rem;
 }
 
 h2 {
@@ -119,6 +90,11 @@ h2 {
 }
 
 /* Sobre */
+.sobre{
+    padding: 5rem 2rem;
+}
+
+
 .sobre-content {
     max-width: 800px;
     margin: 0 auto;
@@ -131,13 +107,6 @@ h2 {
     background: none;
     box-shadow: none;
     padding: 0;
-}
-
-.membro h3 {
-    text-align: left;
-    color: #3498db;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
 }
 
 .membro-content {
@@ -156,11 +125,17 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px #0000001a;
 }
 
 .membro-info {
     flex: 1;
+}
+
+.membro-info h4 {
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .membro-info p {
@@ -168,10 +143,10 @@ h2 {
     font-size: 1.1rem;
 }
 
-.habilidades h4 {
+.habilidades h5, .redes-sociais h5 {
     color: #2c3e50;
     margin-bottom: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .habilidades ul {
@@ -187,6 +162,30 @@ h2 {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
+}
+
+.redes-sociais {
+    margin-top: 2rem;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.contato-img {
+    width: 40px;             
+    height: 40px;
+    border-radius: 50%;      
+    object-fit: cover;       
+    background: #fff;        
+    box-shadow: 0 2px 5px #0000001a;
+    margin: 0 5px;          
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.contato-img:hover {
+    box-shadow: 0 4px 10px rgba(52,152,219,0.3);
+    transform: scale(1.1);                       
 }
 
 /* Projetos */
@@ -238,11 +237,15 @@ h2 {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+.footer p{
+    font-size: 0.8rem;
 }
 
 /* Responsividade */
@@ -272,11 +275,11 @@ footer {
         margin: 1rem 0;
     }
 
-    .hero {
+    .intro {
         padding-top: 80px;
     }
 
-    .hero h1 {
+    .intro h1 {
         font-size: 2rem;
     }
 

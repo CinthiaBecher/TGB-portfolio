@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
+    <!-- header -->
     <header>
+    <div class="header">
         <nav>
+        <div class="nav">
             <div class="logo">Portfólio</div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -22,107 +26,166 @@
                 <li><a href="#gabrielle">Gabrielle</a></li>
                 <li><a href="#projetos">Projetos</a></li>
             </ul>
+        </div>
         </nav>
+    </div>
     </header>
+    <!-- /header -->
 
-    <section id="home" class="hero">
-        
-        <h1>Hello World!</h1>
-        <p>Portfólio de Cinthia e Gabrielle</p>
-        
-    </section>
-
-    <section id="sobre" class="sobre">
-        <h2>Sobre</h2>
-        <div class="sobre-content">
-            <p>Este é um portfólio desenvolvido como trabalho final da disciplina de Desenvolvimento Web, apresentando os projetos desenvolvidos ao longo do semestre.</p>
+    <!-- main -->
+    <main>
+        <!-- Secao 1 - Apresentacao -->
+        <section>
+        <div id="home" class="intro">
+            <h1>Bem vindo!</h1>
+            <p>Portfólio de Cinthia e Gabrielle</p>
         </div>
-    </section>
+        </section>
+        <!-- /Secao 1 - Apresentacao -->
+        
+        <!-- Secao 2 - Sobre -->
+        <section>
+        <div id="sobre" class="sobre">
+            <h2>Sobre</h2>
+            <div class="sobre-content">
+                <p>Este é um portfólio desenvolvido como trabalho final da disciplina de Desenvolvimento Web, apresentando os projetos desenvolvidos ao longo do semestre.</p>
+            </div>
+        </div>
+        </section>
+        <!-- /Secao 2 - Sobre -->
 
-    <section id="integrantes" class="integrantes">
-        <h2>Integrantes</h2>
-        <div class="integrantes-content">
-            <section id="cinthia" class="membro">
-                <div class="membro-content">
-                    <img src="assets/cinthia.jpeg" alt="Foto da Cinthia" class="membro-img">
-                    <div class="membro-info">
-                        <h4>Cinthia Becher</h4>
-                        <p>Estudante de Ciência da Computação na Unisinos.</p>
-                        <div class="habilidades">
-                            <h5>Habilidades</h5>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Angular</li>
-                            </ul>
+        <!-- Secao 3 - Integrantes -->
+        <section>
+        <div class="integrantes">
+            <h2>Integrantes</h2>
+            <div class="integrantes-content">
+                <!-- Cinthia -->
+                <section>
+                <div id="cinthia" class="membro">
+                    <div class="membro-content">
+                        <img src="img/cinthia.jpeg" alt="Foto da Cinthia" class="membro-img">
+                        <div class="membro-info">
+                            <h4>Cinthia Becher</h4>
+                            <p>Estudante de Ciência da Computação na Unisinos.</p>
+                            <div class="habilidades">
+                                <h5>Habilidades</h5>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Angular</li>
+                                </ul>
+                            </div>
+                            <div class="redes-sociais">
+                                <h5>Redes Sociais</h5>
+                                <a href="https://www.linkedin.com/in/cinthiabecher/" target="_blank">
+                                    <img src="img/linkedin_logo.jpeg" alt="Logo do Linkedin" class="contato-img">
+                                </a>
+                                <a href="https://github.com/CinthiaBecher" target="_blank">
+                                    <img src="img/github_logo.png" alt="Logo do Github" class="contato-img">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="gabrielle" class="membro">
-                <div class="membro-content">
-                    <img src="assets/gabrielle.jpeg" alt="Foto da Gabrielle" class="membro-img">
-                    <div class="membro-info">
-                        <h4>Gabrille Bussolo</h4>
-                        <p>Estudante de Ciência da Computação na Unisinos.</p>
-                        <div class="habilidades">
-                            <h5>Habilidades</h5>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Java</li>
-                            </ul>
+                </section>
+                <!-- /Cinthia -->
+
+                <!-- Gabrielle -->
+                <section>
+                <div id="gabrielle" class="membro">
+                    <div class="membro-content">
+                        <img src="img/gabrielle.jpeg" alt="Foto da Gabrielle" class="membro-img">
+                        <div class="membro-info">
+                            <h4>Gabrielle Bussolo</h4>
+                            <p>Estudante de Ciência da Computação na Unisinos.</p>
+                            <div class="habilidades">
+                                <h5>Habilidades</h5>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                            <div class="redes-sociais">
+                                <h5>Redes Sociais</h5>
+                                <a href="https://www.linkedin.com/in/gabrielle-bussolo/" target="_blank">
+                                    <img src="img/linkedin_logo.jpeg" alt="Logo do Linkedin" class="contato-img">
+                                </a>
+                                <a href="https://github.com/gabriellebussolo" target="_blank">
+                                    <img src="img/github_logo.png" alt="Logo do Github" class="contato-img">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2>Projetos Guiados</h2>
-        <div class="projetos-grid">
-            <!-- Projeto 1 -->
-            <div class="projeto-card">
-                <img src="assets/projetoguiado1.png" alt="Projeto 1">
-                <h3>The Acacia Strain</h3>
-                <p>Página de apresentação do The Acacia Strain.</p>
-            </div>
-            <!-- Projeto 2 -->
-            <div class="projeto-card">
-                <img src="assets/projetoguiado2.png" alt="Projeto 2">
-                <h3>Cabeçalho Responsivo</h3>
-                <p>Página demonstrando o uso de media queries para alterar a cor do cabeçalho conforme o tamanho da tela e a orientação do dispositivo</p>
-            </div>
-            <!-- Projeto 3 -->
-            <div class="projeto-card">
-                <img src="assets/projetoguiado3.png" alt="Projeto 3">
-                <h3>Página de Login do Instagram</h3>
-                <p>Cópia visual da tela de login do Instagram.</p>
-            </div>
-            <!-- Projeto 4 -->
-            <div class="projeto-card">
-                <img src="assets/projetoguiado4.png" alt="Projeto 4">
-                <h3>Tabuada Interativa</h3>
-                <p>Ferramenta online para calcular e exibir a tabuada de qualquer número informado pelo usuário.</p>
-            </div>
-            <!-- Projeto 5 -->
-            <div class="projeto-card">
-                <img src="assets/projetoguiado5.png" alt="Projeto 5">
-                <h3>Gerador de QR Codes</h3>
-                <p>Aplicação web que permite ao usuário inserir uma URL ou texto e gerar um QR Code correspondente</p>
+                </section>
+                <!-- /Gabrielle -->
             </div>
         </div>
-    </section>
+        </section>
+        <!-- /Secao 3 - Integrantes -->
 
+        <!-- Secao 4 - Projetos -->
+        <section>
+        <div id="projetos" class="projetos">
+            <h2>Projetos Guiados</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <img src="img/projetoguiado1.png" alt="Projeto 1">
+                    <h3>The Acacia Strain</h3>
+                    <p>Página de apresentação do The Acacia Strain.</p>
+                </div>
+                <!-- /Projeto 1 -->
+
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <img src="img/projetoguiado2.png" alt="Projeto 2">
+                    <h3>Cabeçalho Responsivo</h3>
+                    <p>Página demonstrando o uso de media queries para alterar a cor do cabeçalho conforme o tamanho da tela e a orientação do dispositivo</p>
+                </div>
+                <!-- /Projeto 2 -->
+
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <img src="img/projetoguiado3.png" alt="Projeto 3">
+                    <h3>Página de Login do Instagram</h3>
+                    <p>Cópia visual da tela de login do Instagram.</p>
+                </div>
+                <!-- /Projeto 3 -->
+
+                <!-- Projeto 4 -->
+                <div class="projeto-card">
+                    <img src="img/projetoguiado4.png" alt="Projeto 4">
+                    <h3>Tabuada Interativa</h3>
+                    <p>Ferramenta online para calcular e exibir a tabuada de qualquer número informado pelo usuário.</p>
+                </div>
+                <!-- /Projeto 4 -->
+
+                <!-- Projeto 5 -->
+                <div class="projeto-card">
+                    <img src="img/projetoguiado5.png" alt="Projeto 5">
+                    <h3>Gerador de QR Codes</h3>
+                    <p>Aplicação web que permite ao usuário inserir uma URL ou texto e gerar um QR Code correspondente</p>
+                </div>
+                <!-- /Projeto 5 -->
+            </div>
+        </div>
+        </section>
+        <!-- /Secao 4 - Projetos -->
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
     <footer>
-        <p>&copy; 2025 Cinthia e Gabrielle. Todos os direitos reservados.</p>
+        <div class="footer">
+            <p>&copy; 2025 Cinthia e Gabrielle. Todos os direitos reservados.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
+    <!-- /footer -->
 </body>
 </html> 
